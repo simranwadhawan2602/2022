@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    header{
+        background-color: black;
+    }
+    .flex-container{
+        display: flex;
+    }
+    .left-header
+    {
+        flex:50%
+    }
+    .right-header{
+        flex: 50%;
+        margin-left: 30%;
+    }
+    ul{
+        list-style-type: none
+    }
+    header ul li{
+        display: inline;
+        margin-left: 40px;
+    }
+    header ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    header ul li a:hover{
+    color: deeppink;
+    }
+    nav{
+        background-color: rgb(182, 84, 18);
+        /* box-shadow: 0pc 10px lightcoral; */
+    }
+    .left-nav{
+        flex: 20%;
+    }
+    .right-nav{
+        flex: 80%;
+    }
+    nav ul li {
+        display: inline;
+        margin-left: 40px;
+    }
+    .menu .drop-down{
+        position: absolute;
+        height: auto;
+        width: 100px;
+        background-color: black;
+        left: 55%;
+        display: none;
+        line-height: 30px;
+        box-shadow: 10px;
+    }
+    .menu :hover .drop-down{
+        display: block;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: deeppink;
+        font-size: 22px;
+    }
+    nav ul li a:hover{
+        background-color: aqua;
+        color: darkmagenta;
+    }
+    
+
+</style>
+<body>
+    <header>
+        <div class="flex-container">
+            <div class="left-header">
+                <ul>
+                    <li> <a href="">simranwadhawan26@gmail.com</a> </li>
+                    <li> <a href=""> 7065865203</a> </li>
+                </ul>
+
+            </div>
+            <div class="right-header">
+                <ul>
+                    <li> <a href=""> Facebook </a> </li>
+                    <li> <a href=""> Instgram </a> </li>
+                    <li><a href="">snapchat</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+    <nav>
+        <div class="flex-container">
+            <div class="left-nav">
+                <h1> Logo </h1>
+            </div>
+            <div class="right-nav">
+                <ul>
+                    <li> <a href=""> Home </a> </li>
+                    <li> <a href=""> About </a> </li>
+                    <li> <a href=""> Services </a></li>
+                    <li> <a href=""> Gallery </a> </li>
+                    <li> <a href=""> Contact </a> </li>
+                    <li class="menu"><a href=""> destination</a>
+                    <div class="drop-down">
+                        <a href="">manali</a>
+                        <a href="">delhi</a>
+                        <a href="">goa</a>
+                        <a href="">amritsar</a>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
